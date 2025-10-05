@@ -9,18 +9,28 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "/server.js"
     }
   ],
   "env": {
+    "PORT": "3000",
     "NODE_ENV": "production",
-    "MONGODB_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret",
-    "SESSION_SECRET": "@session_secret"
+    "MONGODB_URI": "mongodb+srv://ibradecode_db_user:GgKtOGFgdJRTov31@vortex-bizguard.yoelipv.mongodb.net/?retryWrites=true&w=majority&appName=vortex-bizguard",
+    "JWT_SECRET": "msbrewcc",
+    "JWT_EXPIRES_IN": "7d",
+    "SESSION_SECRET": "msbrewc",
+    "WHATSAPP_SESSION_PATH": "./data/sessions",
+    "WHATSAPP_QR_TIMEOUT": "60000",
+    "ADMIN_EMAIL": "ibradecode@gmail.com",
+    "ADMIN_PASSWORD": "088103",
+    "ADMIN_USERNAME": "braa",
+    "BCRYPT_ROUNDS": "12",
+    "LOG_LEVEL": "info",
+    "LOG_FILE": "./data/logs/app.log",
+    "SITE_NAME": "Vortex Bizguard",
+    "COOLDOWN_TIME": "300000",
+    "MAX_BUG_PER_DAY": "50",
+    "ALLOW_REGISTRATION": "false"
   }
 }
